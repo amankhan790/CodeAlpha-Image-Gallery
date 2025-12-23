@@ -9,3 +9,54 @@ html, body {
     font-family: Arial, sans-serif;
     background-color: rgba(125, 120, 120, 0.663);
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+main {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+p{
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+}
+.search-box {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px;
+}
+.category-list .category-item {
+    padding: 10px 20px;
+    color: black;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
