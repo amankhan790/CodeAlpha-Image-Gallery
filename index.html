@@ -12,16 +12,23 @@
       <p>Discover beautiful photography from around the world.</p>
 
       <div class="search-box">
-        <input type="text" id="search-input" placeholder="Search images..." />
+        <input type="text" id="search-input" value="" placeholder="Search images..." />
       </div>
-     <div class="category-list">
+      <div class="category-list">
         <div class="category-item">All</div>
         <div class="category-item">Nature</div>
         <div class="category-item">Animals</div>
         <div class="category-item">Travel</div>
         <div class="category-item">Architecture</div>
         <div class="category-item">Food</div>
-     </div>
+      </div>
+      <div class="image-gallery" id="image-gallery">
+        <!-- Images will be dynamically inserted here -->
+      </div>
+      <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" />
+      </div>
     </main>
 
     <script src="script.js"></script>
