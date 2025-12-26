@@ -1,11 +1,8 @@
-const serchInput = document.querySelector("#search-input");
 let imageGallery = document.querySelector("#image-gallery");
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.querySelector(".lightbox .close");
-
-// let CardTall = document.querySelector(".card tall")
 
 let arr = [
   { Image: "/Images/Animals/animal1.jpg", name: "Animal 1" },
@@ -58,8 +55,6 @@ let arr = [
   { Image: "/Images/travel/buildings.jpg", name: "Buildings" },
   { Image: "/Images/travel/mountains.jpg", name: "Mountains" },
 ];
-
-
 
 const cardSizes = ["tall", "medium", "small"];
 

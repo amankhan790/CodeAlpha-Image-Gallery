@@ -161,14 +161,23 @@ p {
   .image-gallery {
     column-count: 3;
   }
+  .lightbox img {
+    max-width: 80%;
+  }
 }
 @media (max-width: 760px) {
   .image-gallery {
     column-count: 2;
   }
+  .lightbox img {
+    max-width: 70%;
+  }
 }
 @media (max-width: 480px) {
   .image-gallery {
     column-count: 1;
+  }
+    .lightbox img {
+    max-width: 65%;
   }
 }
