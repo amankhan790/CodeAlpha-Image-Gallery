@@ -1,8 +1,9 @@
-let imageGallery = document.querySelector("#image-gallery");
-
+const imageGallery = document.querySelector("#image-gallery");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.querySelector(".lightbox .close");
+const rightArrow = document.querySelector("#lightbox .right");
+const leftArrow = document.querySelector("#lightbox .left");
 
 let arr = [
   { Image: "/Images/Animals/animal1.jpg", name: "Animal 1" },
@@ -58,7 +59,9 @@ let arr = [
 
 const cardSizes = ["tall", "medium", "small"];
 
-arr.map((item, index) => {
+let currIndex = 0;
+
+arr.forEach((item, index) => {
   card = document.createElement("div");
 
   let cardClass = cardSizes[index % cardSizes.length];
@@ -71,7 +74,9 @@ arr.map((item, index) => {
   img.alt = item.name;
 
   img.addEventListener("click", () => {
-    lightboxImg.src = img.src;
+    currIndex = index;
+
+    lightboxImg.src = arr[currIndex].Image;
     lightbox.classList.add("active");
   });
 
@@ -82,4 +87,13 @@ arr.map((item, index) => {
 
   card.appendChild(img);
   imageGallery.appendChild(card);
+});
+
+rightArrow.addEventListener("click", () => {
+  currIndex = (currIndex + 1) % arr.length;
+  lightboxImg.src = arr[currIndex].Image;
+});
+leftArrow.addEventListener("click", () => {
+  currIndex = (currIndex - 1 + arr.length) % arr.length;
+  lightboxImg.src = arr[currIndex].Image;
 });

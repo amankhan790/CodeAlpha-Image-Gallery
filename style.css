@@ -132,7 +132,25 @@ p {
   border-radius: 12px;
 }
 
-.lightbox .close {
+.lightbox .right {
+  position: absolute;
+  top: 340px;
+  right: 20px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .left {
+  position: absolute;
+  top: 340px;
+  left: 20px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .close{
   position: absolute;
   top: 20px;
   right: 30px;
@@ -177,7 +195,7 @@ p {
   .image-gallery {
     column-count: 1;
   }
-    .lightbox img {
+  .lightbox img {
     max-width: 65%;
   }
 }
