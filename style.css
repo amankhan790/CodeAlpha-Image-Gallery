@@ -55,12 +55,15 @@ p {
 }
 .category-list .category-item {
   padding: 10px 20px;
-  color: black;
   font: bolder 16px Arial, sans-serif;
   border-radius: 1rem;
   border: 1px solid grey;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.filter {
+  color: white;
+  background-color: black;
 }
 
 .image-gallery {
